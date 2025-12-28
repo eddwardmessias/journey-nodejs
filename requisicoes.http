@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:3333
+
+POST {{baseUrl}}/trips
+# Content-Type: application/json
+# Authorization: Bearer {{token}}
+# Idempotency-Key: acsb1ad-50d5-4a0f-b0d1-61a64a0fee28
+
+# {
+#   "amount": 7.00
+# }
+
+
+###
+# GET {{baseUrl}}/auth/test
