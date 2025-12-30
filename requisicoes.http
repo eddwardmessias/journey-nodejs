@@ -1,13 +1,17 @@
 @baseUrl = http://localhost:3333
 
 POST {{baseUrl}}/trips
-# Content-Type: application/json
+Content-Type: application/json
 # Authorization: Bearer {{token}}
 # Idempotency-Key: acsb1ad-50d5-4a0f-b0d1-61a64a0fee28
 
-# {
-#   "amount": 7.00
-# }
+{
+  "destination": "Campina Grande",
+  "starts_at": "2026-01-01T10:00:00Z",
+  "ends_at": "2026-01-10T18:00:00Z",
+  "owner_name": "Edd Silva",
+  "owner_email": "edd.silva@example.com"
+}
 
 
 ###

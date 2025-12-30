@@ -126,3 +126,5 @@ junit.xml
 prisma/migrations/migration_lock.toml
 
 z-*.md
+z-info.md
+z-info/
