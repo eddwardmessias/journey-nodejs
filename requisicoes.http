@@ -34,8 +34,10 @@ Content-Type: application/json
 # Idempotency-Key: acsb1ad-50d5-4a0f-b0d1-61a64a0fee28
 
 {
-  "title": "Academia",
-  "occours_at": "2026-01-05T10:00:00Z"
+  "title": "Show",
+  "occours_at": "2026-01-06T10:00:00Z"
 }
 
-# 57d4659b-3406-4d90-8485-77af18faf9bf activityId
+###
+GET {{baseUrl}}/trips/c1127418-7700-466b-a1d6-d7f9e39bf659/activities
+Content-Type: application/json
