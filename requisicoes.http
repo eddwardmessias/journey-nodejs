@@ -18,6 +18,7 @@ Content-Type: application/json
     ]
 }
 
+
 ### CONFIRM TRIP
 GET {{baseUrl}}/trips/d0ed5dc3-fff8-4140-b347-4642623a4669/confirm
 Content-Type: application/json
@@ -76,8 +77,6 @@ Content-Type: application/json
 ### UPDATE TRIP
 PUT {{baseUrl}}/trips/c1127418-7700-466b-a1d6-d7f9e39bf659
 Content-Type: application/json
-# Authorization: Bearer {{token}}
-# Idempotency-Key: acsb1ad-50d5-4a0f-b0d1-61a64a0fee28
 
 {
   "destination": "Caruaru",

@@ -2,6 +2,7 @@ import { prisma } from './../lib/prisma';
 import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import z from "zod";
+import { ClientError } from '../errors/client-error';
 
 
 export async function getParticipant(app: FastifyInstance) {
@@ -32,7 +33,7 @@ export async function getParticipant(app: FastifyInstance) {
     })
 
     if(!participant){
-      return new Error('Participant not found'  );
+      throw new ClientError('Participant not found'  );
     }
 
 

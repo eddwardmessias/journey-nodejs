@@ -4,6 +4,7 @@ import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import z, { email } from "zod";
 import id from 'zod/v4/locales/id.js';
+import { ClientError } from '../errors/client-error';
 
 
 export async function getParticipants(app: FastifyInstance) {
@@ -38,7 +39,7 @@ export async function getParticipants(app: FastifyInstance) {
     })
 
     if(!trip){
-      return new Error('Trip not found'  );
+      throw new ClientError('Trip not found'  );
     }
 
 
